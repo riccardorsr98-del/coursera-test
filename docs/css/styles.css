@@ -55,9 +55,9 @@ header {
 .section2 { background-color: #6bc1ff; }
 .section3 { background-color: #6bc1ff; } 
 
-.section1 .section-title { background-color:#4cc99b; }
+.section1 .section-title { background-color:#5d4cc9; }
 .section2 .section-title { background-color:#4cc99b; }
-.section3 .section-title { background-color: #4cc99b; }
+.section3 .section-title { background-color: #c94cac; }
 
 /* BREAKPOINT - DESKTOP (>=992px) */
 @media (min-width: 992px) {
