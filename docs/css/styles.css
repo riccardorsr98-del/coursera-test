@@ -1,85 +1,47 @@
-/* RESET BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* importante per gestire larghezza e padding */
-}
-
-/* BODY */
+/* Stili generali */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
+  padding-top: 0;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 175%; /* 75% più grande rispetto a testo base */
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
-/* CONTAINER */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.navbar-brand {
+  font-weight: bold;
 }
 
-/* SEZIONI BASE */
-.section {
-    position: relative;
-    padding: 70px 20px 20px; /* padding-top aumentato per spazio titolo */
-    border: 1px solid black;
-    color: black;;
-    font-size: 125%;
+/* Menu mobile: sfondo e allineamento */
+.navbar-collapse {
+  background-color: #f8f8f8;
 }
 
-/* TESTO DELLA SEZIONE */
-.section p {
-    margin-top: 10px; /* margine extra per separare testo dal titolo */
+.navbar-nav > li > a {
+  color: #333;
 }
 
-/* TITOLI SEZIONE */
-.section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 130px; 
-    padding: 5px 10px;
-    border: 1px solid black;
-    font-weight: bold;
-    font-size: 125%; /* 25% più grande rispetto a testo base */
+.navbar-nav > li > a:hover {
+  background-color: #ddd;
 }
 
-/* COLORI SEZIONI */
-.section1 { background-color: #6bc1ff; }
-.section2 { background-color: #6bc1ff; }
-.section3 { background-color: #6bc1ff; } 
-
-.section1 .section-title { background-color:#5d4cc9; }
-.section2 .section-title { background-color:#4cc99b; }
-.section3 .section-title { background-color: #c94cac; }
-
-/* BREAKPOINT - DESKTOP (>=992px) */
-@media (min-width: 992px) {
-    .section {
-        flex: 1 1 calc(33.33% - 20px);
-    }
+/* Intestazione */
+h2.text-center {
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-/* BREAKPOINT - TABLET (768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .section1, .section2 {
-        flex: 1 1 calc(50% - 20px);
-    }
-    .section3 {
-        flex: 1 1 100%;
-    }
+/* Sezione principale */
+.content-section {
+  background-color: #e3f2fd;
+  height: 1000px;
+  padding: 30px;
+
 }
 
-/* BREAKPOINT - MOBILE (<=767px) */
-@media (max-width: 767px) {
-    .section {
-        flex: 1 1 100%;
-    }
+/* Testo del contenuto */
+.content-section p {
+  font-size: 16px;
+  line-height: 1.6;
 }
