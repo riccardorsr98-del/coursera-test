@@ -3,6 +3,11 @@ body {
   padding-top: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 /* Navbar */
 .navbar {
   margin-bottom: 0;
@@ -35,7 +40,7 @@ h2.text-center {
 /* Sezione principale */
 .content-section {
   background-color: #e3f2fd;
-  height: 1000px;
+  height: auto;
   padding: 30px;
   margin-left: 15px;
   margin-right: 15px;
@@ -46,4 +51,26 @@ h2.text-center {
 .content-section p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+
+#section-1{
+    background-color: #c7e4ca;
+}
+
+#section-2 {
+    background-color: #ffcf94;
+}
+
+#section-3 {
+    background-color: #f9c3ef;
+}   
+
+#text > h3 {
+    margin-bottom: 15px;
+}
+
+#header-nav .navbar-brand {
+    position: absolute;
+    left: 10px;
 }
