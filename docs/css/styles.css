@@ -24,6 +24,7 @@ body {
 }
 
 .navbar-nav > li > a {
+  transition: background-color 0.9s ease;
   color: #333;
 }
 
